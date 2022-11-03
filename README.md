@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/startpage/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/startpage?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/startpage/issues"><img src="https://img.shields.io/github/issues/catppuccin/startpage?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/startpage/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/startpage?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/bartlibert/startpage/stargazers"><img src="https://img.shields.io/github/stars/bartlibert/startpage?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/bartlibert/startpage/issues"><img src="https://img.shields.io/github/issues/bartlibert/startpage?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/bartlibert/startpage/contributors"><img src="https://img.shields.io/github/contributors/bartlibert/startpage?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 #### Stylus
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
 2. Enable CSP Patching from Stylus Settings > Advanced.
-3. [Click here to install.](https://github.com/catppuccin/startpage/raw/main/catppuccin.user.css)
+3. [Click here to install.](https://raw.githubusercontent.com/bartlibert/startpage/main/catpuccin.user.css)
 
 #### Stylish
 1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
