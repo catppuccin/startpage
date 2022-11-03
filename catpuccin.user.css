@@ -1,0 +1,160 @@
+/* ==UserStyle==
+@name         Startpage Catppuccin
+@namespace    github.com/catppuccin/startpage
+@homepageURL  https://github.com/catppuccin/startpage
+@version      0.1.0
+@description  Catppuccin-based theme for Startpage.com.
+@author       Bart Libert
+@preprocessor stylus
+@var select lighttheme "Light Theme" ["Latte*", "Frappe", "Macchiato", "Mocha"]
+@var select darktheme "Dark Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
+==/UserStyle== */
+@-moz-document domain("startpage.com") {
+
+  set_colours(flavour) {
+    if (flavour=="Latte") {
+      --ctp-rosewater: #dc8a78;
+      --ctp-flamingo: #dd7878;
+      --ctp-green: #40a02b;
+      --ctp-blue: #1e66f5;
+      --ctp-lavender: #7287fd;
+      --ctp-text: #4c4f69;
+      --ctp-subtext1: #5c5f77;
+      --ctp-base: #eff1f5;
+      --ctp-mantle: #e6e9ef;
+    }
+
+    if (flavour=="Frappe") {
+      --ctp-rosewater: #f2d5cf;
+      --ctp-flamingo: #eebebe;
+      --ctp-green: #a6d189;
+      --ctp-blue: #8caaee;
+      --ctp-lavender: #babbf1;
+      --ctp-text: #c6d0f5;
+      --ctp-subtext1: #b5bfe2;
+      --ctp-base: #303446;
+      --ctp-mantle: #292c3c;
+    }
+
+    if (flavour=="Macchiato") {
+      --ctp-rosewater: #f4dbd6;
+      --ctp-flamingo: #f0c6c6;
+      --ctp-green: #a6da95;
+      --ctp-blue: #8aadf4;
+      --ctp-lavender: #b7bdf8;
+      --ctp-text: #cad3f5;
+      --ctp-subtext1: #b8c0e0;
+      --ctp-base: #24273a;
+      --ctp-mantle: #1e2030;
+    }
+
+    if (flavour=="Mocha") {
+      --ctp-rosewater: #f5e0dc;
+      --ctp-flamingo: #f2cdcd;
+      --ctp-green: #a6e3a1;
+      --ctp-blue: #89b4fa;
+      --ctp-lavender: #b4befe;
+      --ctp-text: #cdd6f4;
+      --ctp-subtext1: #bac2de;
+      --ctp-base: #1e1e2e;
+      --ctp-mantle: #181825;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      if (lighttheme=="Frappe") {
+        set_colours(Frappe)
+      }
+      else if (lighttheme=="Macchiato") {
+        set_colours(Macchiato)
+      }
+      else if (lighttheme=="Mocha") {
+        set_colours(Mocha)
+      }
+      else {
+        set_colours(Latte)
+      }
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      if (darktheme=="Latte") {
+        set_colours(Latte)
+      }
+      else if (darktheme=="Frappe") {
+        set_colours(Frappe)
+      }
+      else if (darktheme=="Macchiato") {
+        set_colours(Macchiato)
+      }
+      else {
+        set_colours(Mocha)
+      }
+    }
+  }
+
+  .header,
+  .wp-qi-sb__result,
+  .linkHover,
+  .footer__container {
+    background: var(--ctp-mantle);
+  }
+
+  .layout-web,
+  .layout-web__body,
+  .w-gl {
+    background: var(--ctp-base) !important;
+  }
+  .wp-qi-sb__result {
+    border: 1px solid var(--ctp-mantle) !important;
+  }
+  .wp-qi-sb__top-square-img {
+    border-bottom: 1px solid (--ctp-mantle) !important;
+  }
+
+  /* fonts */
+  .w-gl__result-title,
+  .inline-nav-menu__link,
+  .wp-qi-sb__title {
+    color: var(--ctp-text) !important;
+  }
+  .w-gl__result,
+  .search-filter-time__dropdown,
+  .search-filter-region__dropdown,
+  .search-filter-family__field-label,
+  .wp-qi-sb__extract {
+    color: var(--ctp-subtext1) !important;
+  }
+  .w-gl__result-url {
+    color: var(--ctp-rosewater) !important;
+  }
+  .wp-qi-sb__expand-text,
+  .inline-nav-menu__link__active,
+  .inline-nav-menu__link:hover {
+    color: var(--ctp-green) !important;
+  }
+  .inline-nav-menu__link__active,
+  .inline-nav-menu__link__post-link:hover {
+    border-bottom: 2px solid var(--ctp-green) !important;
+  }
+  .pagination .num--active {
+    background: var(--ctp-flamingo) !important;
+    border: 1px dashed var(--ctp-flamingo) !important;
+  }
+
+  .pagination__num:hover,
+  .pagination__next-prev-button:hover {
+    background: var(--ctp-blue) !important;
+    border: 1px solid var(--ctp-blue) !important;
+  }
+
+  header {
+    background-color: var(--ctp-mantle) !important;
+  }
+
+  .w-gl__result-title:visited {
+    color: var(--ctp-lavender) !important;
+  }
+}
