@@ -22,10 +22,6 @@
 #### Stylus
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
 2. [Click here to install.](https://raw.githubusercontent.com/catppuccin/startpage/main/catpuccin.user.css)
-#### Stylish
-1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
-2. Create a new custom Style that applies to `github.com`.
-3. Copy content of [catppuccin.user.css](catppuccin.user.css) and paste to created Style.
 
 
 ## 💝 Thanks to
